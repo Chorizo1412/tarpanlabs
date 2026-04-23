@@ -1,4 +1,4 @@
-# [NOMBRE AGENCIA] — AI/LLM Access Configuration
+# Tarpan Labs — AI/LLM Access Configuration
 
 > Agencia de Inteligencia Artificial para empresas en América Latina.
 > Servicios: chatbots con IA, automatización de procesos, desarrollo web, auditoría SEO, auditoría de publicidad digital, desarrollo de SaaS.

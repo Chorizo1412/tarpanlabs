@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: '[NOMBRE AGENCIA]',
+  name: 'Tarpan Labs',
   tagline: 'Agencia de Inteligencia Artificial para PyMEs en LATAM',
   url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://dominio.com',
   description:
