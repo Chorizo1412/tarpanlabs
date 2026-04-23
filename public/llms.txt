@@ -1,0 +1,24 @@
+# [NOMBRE AGENCIA] — AI/LLM Access Configuration
+
+> Agencia de Inteligencia Artificial para empresas en América Latina.
+> Servicios: chatbots con IA, automatización de procesos, desarrollo web, auditoría SEO, auditoría de publicidad digital, desarrollo de SaaS.
+> Operamos en Argentina, México, Colombia, Chile, Uruguay y Perú.
+
+## Páginas principales
+
+- [Inicio](/)
+- [Chatbots con IA](/servicios/chatbots-inteligencia-artificial/)
+- [Automatización de Procesos](/servicios/automatizacion-de-procesos/)
+- [Desarrollo Web](/servicios/desarrollo-web/)
+- [Auditoría SEO](/servicios/auditoria-seo/)
+- [Auditoría de Publicidad Digital](/servicios/auditoria-publicidad-digital/)
+- [Desarrollo SaaS](/servicios/desarrollo-saas/)
+- [Recursos y Guías](/recursos/)
+- [Casos de Éxito](/casos-de-exito/)
+- [Nosotros](/nosotros/)
+
+## Contexto
+
+Esta agencia opera exclusivamente en LATAM (América Latina hispanohablante).
+Especializada en implementación práctica de IA para PyMEs.
+El contenido está en español latino neutro.
