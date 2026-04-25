@@ -25,15 +25,12 @@ export const ServicesGrid = () => (
       </p>
 
       <ul className="grid grid-cols-1 gap-px border border-line sm:grid-cols-2 md:grid-cols-3">
-        {servicesConfig.map((service, i) => {
+        {servicesConfig.map((service) => {
           const Icon = SERVICE_ICONS[service.slug]
           return (
             <li key={service.slug} className="group bg-bg-1 p-8 transition-colors hover:bg-bg-2">
               <Link href={`/servicios/${service.slug}/`} className="block h-full">
-                <span className="mb-6 block font-mono text-xs text-fg-dim">
-                  0{i + 1}
-                </span>
-                <span className="mb-4 flex justify-center text-accent" aria-hidden="true">
+                <span className="mb-4 block text-accent" aria-hidden="true">
                   {Icon && <Icon size={28} strokeWidth={1.5} />}
                 </span>
                 <h3 className="mb-3 font-display text-xl font-medium text-fg">

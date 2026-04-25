@@ -11,7 +11,6 @@ export const siteConfig = {
   countries: ['AR', 'MX', 'CO', 'CL', 'UY', 'PE'] as const,
   nav: [
     { label: 'Servicios', href: '/#servicios' },
-    { label: 'Casos de Éxito', href: '/casos/' },
     { label: 'Nosotros', href: '/nosotros/' },
     { label: 'Contacto', href: '/contacto/' },
   ],
