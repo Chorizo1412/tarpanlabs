@@ -1,31 +1,29 @@
 'use client'
 
 import { useContactForm } from '@/lib/hooks/useContactForm'
+import { Button } from '@/components/ui/Button'
 import { cn } from '@/lib/utils/cn'
 
 const INDUSTRIES = [
-  'Comercio / Retail',
-  'Gastronomía / Restaurantes',
-  'Servicios profesionales',
-  'Salud / Bienestar',
-  'Educación',
-  'Logística / Transporte',
-  'Manufactura',
+  'Comercio y Retail',
+  'Gastronomía',
+  'Servicios Profesionales',
+  'Salud',
   'Tecnología',
+  'Inmobiliaria',
+  'Educación',
   'Otro',
 ]
 
-const EMPLOYEE_COUNTS = ['1-5', '6-20', '21-50', '+50']
+const TEAM_SIZES = ['1–5', '6–20', '21–50', 'Más de 50']
 
-const COUNTRIES = [
-  'Argentina', 'México', 'Colombia', 'Chile', 'Uruguay',
-  'Perú', 'Ecuador', 'Bolivia', 'Paraguay', 'Venezuela', 'Otro',
-]
-
-const inputClass = (hasError: boolean) =>
+const fieldClass = (hasError: boolean) =>
   cn(
-    'w-full rounded-lg border px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-brand-600',
-    hasError ? 'border-red-400 bg-red-50' : 'border-slate-300 bg-white',
+    'w-full rounded-[--radius] border bg-bg-2 px-4 py-3 text-sm text-fg placeholder:text-fg-dim',
+    'transition-colors focus:outline-none focus:ring-2 focus:ring-accent/30',
+    hasError
+      ? 'border-danger-dim focus:ring-danger/20'
+      : 'border-line focus:border-accent',
   )
 
 export const ContactForm = () => {
@@ -33,8 +31,8 @@ export const ContactForm = () => {
 
   if (state.status === 'success') {
     return (
-      <div className="rounded-xl border border-green-200 bg-green-50 p-8 text-center">
-        <p className="text-lg font-semibold text-green-800">{state.message}</p>
+      <div className="border border-success-dim bg-success-subtle rounded-[--radius-lg] p-8 text-center">
+        <p className="text-lg font-medium text-success">{state.message}</p>
       </div>
     )
   }
@@ -43,7 +41,7 @@ export const ContactForm = () => {
     <form onSubmit={handleSubmit} noValidate className="space-y-5">
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         <div>
-          <label className="mb-1 block text-sm font-medium text-slate-700">
+          <label className="mb-1.5 block text-sm font-medium text-fg-muted">
             Nombre completo *
           </label>
           <input
@@ -51,13 +49,13 @@ export const ContactForm = () => {
             name="name"
             value={formData.name}
             onChange={handleChange}
-            placeholder="Tu nombre completo"
-            className={inputClass(!!errors.name)}
+            placeholder="Tu nombre"
+            className={fieldClass(!!errors.name)}
           />
-          {errors.name && <p className="mt-1 text-xs text-red-600">{errors.name}</p>}
+          {errors.name && <p className="mt-1 text-xs text-danger">{errors.name}</p>}
         </div>
         <div>
-          <label className="mb-1 block text-sm font-medium text-slate-700">
+          <label className="mb-1.5 block text-sm font-medium text-fg-muted">
             Empresa *
           </label>
           <input
@@ -65,88 +63,82 @@ export const ContactForm = () => {
             name="company"
             value={formData.company}
             onChange={handleChange}
-            placeholder="¿Cómo se llama tu empresa?"
-            className={inputClass(!!errors.company)}
+            placeholder="Nombre de tu empresa"
+            className={fieldClass(!!errors.company)}
           />
-          {errors.company && <p className="mt-1 text-xs text-red-600">{errors.company}</p>}
+          {errors.company && <p className="mt-1 text-xs text-danger">{errors.company}</p>}
         </div>
       </div>
 
-      <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         <div>
-          <label className="mb-1 block text-sm font-medium text-slate-700">Rubro</label>
+          <label className="mb-1.5 block text-sm font-medium text-fg-muted">
+            Rubro / Industria *
+          </label>
           <select
             name="industry"
             value={formData.industry}
             onChange={handleChange}
-            className={inputClass(false)}
+            className={fieldClass(!!errors.industry)}
           >
-            <option value="">Seleccioná tu rubro</option>
-            {INDUSTRIES.map((i) => (
-              <option key={i} value={i}>{i}</option>
+            <option value="">Seleccioná un rubro</option>
+            {INDUSTRIES.map((ind) => (
+              <option key={ind} value={ind}>{ind}</option>
             ))}
           </select>
+          {errors.industry && <p className="mt-1 text-xs text-danger">{errors.industry}</p>}
         </div>
         <div>
-          <label className="mb-1 block text-sm font-medium text-slate-700">Empleados</label>
+          <label className="mb-1.5 block text-sm font-medium text-fg-muted">
+            Tamaño del equipo *
+          </label>
           <select
-            name="employeeCount"
-            value={formData.employeeCount}
+            name="teamSize"
+            value={formData.teamSize}
             onChange={handleChange}
-            className={inputClass(false)}
+            className={fieldClass(!!errors.teamSize)}
           >
-            <option value="">Cantidad</option>
-            {EMPLOYEE_COUNTS.map((c) => (
-              <option key={c} value={c}>{c}</option>
+            <option value="">Seleccioná una opción</option>
+            {TEAM_SIZES.map((s) => (
+              <option key={s} value={s}>{s}</option>
             ))}
           </select>
-        </div>
-        <div>
-          <label className="mb-1 block text-sm font-medium text-slate-700">País *</label>
-          <select
-            name="country"
-            value={formData.country}
-            onChange={handleChange}
-            className={inputClass(!!errors.country)}
-          >
-            <option value="">Tu país</option>
-            {COUNTRIES.map((c) => (
-              <option key={c} value={c}>{c}</option>
-            ))}
-          </select>
-          {errors.country && <p className="mt-1 text-xs text-red-600">{errors.country}</p>}
+          {errors.teamSize && <p className="mt-1 text-xs text-danger">{errors.teamSize}</p>}
         </div>
       </div>
 
       <div>
-        <label className="mb-1 block text-sm font-medium text-slate-700">
-          ¿Qué proceso consume más tiempo en tu empresa?
+        <label className="mb-1.5 block text-sm font-medium text-fg-muted">
+          ¿Qué proceso o área de tu empresa consume más tiempo o recursos? *
         </label>
         <textarea
           name="process"
           value={formData.process}
           onChange={handleChange}
           rows={4}
-          placeholder="Contanos en qué perdiste más tiempo esta semana. Por ejemplo: responder WhatsApps manualmente, cargar pedidos en planillas, hacer reportes..."
-          className={inputClass(false)}
+          placeholder="Contanos qué proceso querés automatizar o mejorar. Qué hace tu equipo manualmente hoy, qué resultado esperás."
+          className={fieldClass(!!errors.process)}
         />
+        {errors.process && <p className="mt-1 text-xs text-danger">{errors.process}</p>}
       </div>
 
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         <div>
-          <label className="mb-1 block text-sm font-medium text-slate-700">Email *</label>
+          <label className="mb-1.5 block text-sm font-medium text-fg-muted">
+            Email de contacto *
+          </label>
           <input
             type="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
-            placeholder="Tu email de trabajo"
-            className={inputClass(!!errors.email)}
+            placeholder="hola@empresa.com"
+            className={fieldClass(!!errors.email)}
           />
-          {errors.email && <p className="mt-1 text-xs text-red-600">{errors.email}</p>}
+          {errors.email && <p className="mt-1 text-xs text-danger">{errors.email}</p>}
         </div>
         <div>
-          <label className="mb-1 block text-sm font-medium text-slate-700">
+          <label className="mb-1.5 block text-sm font-medium text-fg-muted">
             WhatsApp (opcional)
           </label>
           <input
@@ -154,23 +146,30 @@ export const ContactForm = () => {
             name="whatsapp"
             value={formData.whatsapp}
             onChange={handleChange}
-            placeholder="+54 9 11 1234-5678"
-            className={inputClass(false)}
+            placeholder="+54 9 11 ..."
+            className={fieldClass(false)}
           />
         </div>
       </div>
 
       {state.status === 'error' && (
-        <p className="rounded-lg bg-red-50 p-4 text-sm text-red-700">{state.message}</p>
+        <p className="rounded-[--radius] border border-danger-dim bg-danger-subtle p-4 text-sm text-danger">
+          {state.message}
+        </p>
       )}
 
-      <button
+      <p className="text-xs text-fg-dim">
+        No hacemos seguimiento agresivo. Si no es el momento indicado, no hay problema.
+      </p>
+
+      <Button
         type="submit"
         disabled={state.status === 'loading'}
-        className="w-full rounded-lg bg-brand-700 px-6 py-4 text-base font-semibold text-white transition-colors hover:bg-brand-800 disabled:opacity-60"
+        size="lg"
+        className="w-full"
       >
-        {state.status === 'loading' ? 'Enviando...' : 'Quiero una consulta gratuita'}
-      </button>
+        {state.status === 'loading' ? 'Enviando...' : 'Enviar consulta'}
+      </Button>
     </form>
   )
 }

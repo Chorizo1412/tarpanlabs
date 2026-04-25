@@ -1,66 +1,73 @@
+import Link from 'next/link'
 import { Section } from '@/components/ui/Section'
 import { Container } from '@/components/ui/Container'
-import { Card } from '@/components/ui/Card'
 import { Badge } from '@/components/ui/Badge'
 import type { CaseStudy } from '@/lib/types'
 
 const CASES: CaseStudy[] = [
   {
-    industry: 'E-commerce de ropa',
-    problem:
-      'Respondía consultas de WhatsApp de forma manual, 8 horas al día. El equipo no daba abasto en temporada alta.',
-    solution:
-      'Implementamos un chatbot de WhatsApp entrenado con el catálogo, políticas y FAQs del negocio.',
-    result:
-      'El 80% de las consultas se resuelven automáticamente. El equipo ahora maneja solo casos complejos y ventas.',
+    slug: 'agente-soporte-ecommerce',
+    industry: 'E-commerce',
+    badge: 'Chatbots con IA',
+    headline: '80% de consultas resueltas sin intervención humana',
+    description:
+      'Retailer de moda con 40k consultas mensuales en WhatsApp. Implementamos un chatbot entrenado con el catálogo, políticas de devolución y sistema de seguimiento de pedidos.',
+    metrics: [
+      { label: 'Consultas automatizadas', value: '80%' },
+      { label: 'Tiempo de respuesta', value: '<12s' },
+      { label: 'Reducción de carga del equipo', value: '−65%' },
+    ],
   },
   {
-    industry: 'Agencia de marketing',
-    problem:
-      'Cargaba reportes de campañas manualmente desde 4 plataformas distintas. 3 horas semanales de copy-paste.',
-    solution:
-      'Automatizamos la recopilación de datos y la generación del informe semanal para clientes.',
-    result:
-      'Los reportes se generan solos cada lunes a las 8am. El equipo recuperó 3 horas semanales por cliente.',
+    slug: 'automatizacion-inmobiliaria',
+    industry: 'Inmobiliaria',
+    badge: 'Automatización de procesos',
+    headline: 'De 3 horas diarias de carga manual a cero',
+    description:
+      'Agencia con 200 propiedades activas que cargaba datos de portales a mano todos los días. Automatizamos la sincronización entre plataformas y el envío de reportes a propietarios.',
+    metrics: [
+      { label: 'Horas ahorradas por semana', value: '15h' },
+      { label: 'Propiedades sincronizadas', value: '200+' },
+      { label: 'Errores de carga', value: '0' },
+    ],
   },
 ]
 
 export const CaseStudies = () => (
-  <Section background="white">
+  <Section id="casos">
     <Container>
-      <h2 className="mb-4 text-center text-3xl font-bold text-brand-800 md:text-4xl">
-        Casos de éxito
+      <p className="overline mb-4">Casos de Éxito</p>
+      <h2 className="mb-16 max-w-xl font-display text-4xl font-medium leading-tight tracking-tight text-fg md:text-5xl">
+        Resultados reales
       </h2>
-      <p className="mb-12 text-center text-slate-500">
-        Resultados reales en empresas latinoamericanas
-      </p>
-      <ul className="grid grid-cols-1 gap-6 md:grid-cols-2">
+
+      <ul className="space-y-px">
         {CASES.map((c) => (
-          <li key={c.industry}>
-            <Card className="h-full">
-              <Badge className="mb-4">{c.industry}</Badge>
-              <div className="space-y-3 text-sm">
-                <div>
-                  <span className="font-semibold text-slate-800">Problema: </span>
-                  <span className="text-slate-600">{c.problem}</span>
-                </div>
-                <div>
-                  <span className="font-semibold text-slate-800">Solución: </span>
-                  <span className="text-slate-600">{c.solution}</span>
-                </div>
-                <div>
-                  <span className="font-semibold text-green-700">Resultado: </span>
-                  <span className="text-slate-600">{c.result}</span>
-                </div>
-              </div>
-            </Card>
+          <li key={c.slug} className="border border-line bg-bg-1 p-8 transition-colors hover:bg-bg-2">
+            <div className="mb-6 flex flex-wrap items-center gap-3">
+              <Badge variant="muted">{c.industry}</Badge>
+              <Badge variant="accent">{c.badge}</Badge>
+            </div>
+            <h3 className="mb-3 font-display text-2xl font-medium text-fg">
+              {c.headline}
+            </h3>
+            <p className="mb-8 max-w-2xl text-sm text-fg-muted">{c.description}</p>
+            <ul className="flex flex-wrap gap-8">
+              {c.metrics.map((m) => (
+                <li key={m.label}>
+                  <p className="font-mono text-2xl font-medium text-accent">{m.value}</p>
+                  <p className="mt-0.5 text-xs text-fg-dim">{m.label}</p>
+                </li>
+              ))}
+            </ul>
           </li>
         ))}
       </ul>
-      <div className="mt-10 text-center">
-        <a href="/casos-de-exito/" className="font-semibold text-brand-600 hover:underline">
+
+      <div className="mt-10">
+        <Link href="/casos/" className="font-mono text-sm text-accent hover:underline">
           Ver todos los casos →
-        </a>
+        </Link>
       </div>
     </Container>
   </Section>

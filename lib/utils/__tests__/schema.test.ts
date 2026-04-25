@@ -11,7 +11,7 @@ import type { ServiceConfig, Faq, BreadcrumbItem } from '@/lib/types'
 const mockService: ServiceConfig = {
   slug: 'chatbots-inteligencia-artificial',
   name: 'Chatbots con IA',
-  icon: '🤖',
+  icon: '◈',
   shortDescription: 'Test description',
   fullDescription: 'Full description',
   keywords: ['chatbot'],

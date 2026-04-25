@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Space_Grotesk, Inter, JetBrains_Mono } from 'next/font/google'
 import { Navbar } from '@/components/sections/Navbar'
 import { Footer } from '@/components/sections/Footer'
 import { JsonLd } from '@/components/ui/JsonLd'
@@ -7,12 +7,28 @@ import { buildOrganizationSchema } from '@/lib/utils/schema'
 import { siteConfig } from '@/config/site'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-space-grotesk',
+  weight: ['400', '500', '600'],
+})
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  weight: ['400', '500', '600'],
+})
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  variable: '--font-jetbrains-mono',
+  weight: ['400', '500'],
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} | Agencia de IA para Empresas en LATAM`,
+    default: `${siteConfig.name} | Ingeniería de IA para LATAM`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -21,19 +37,19 @@ export const metadata: Metadata = {
     locale: 'es_419',
     siteName: siteConfig.name,
   },
-  twitter: {
-    card: 'summary_large_image',
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
+  twitter: { card: 'summary_large_image' },
+  robots: { index: true, follow: true },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" className={inter.variable}>
-      <body className="min-h-screen bg-white font-sans text-slate-900 antialiased">
+    <html
+      lang="es"
+      data-theme="a"
+      suppressHydrationWarning
+      className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable}`}
+    >
+      <body className="min-h-screen font-sans antialiased">
         <JsonLd data={buildOrganizationSchema()} />
         <Navbar />
         <main>{children}</main>

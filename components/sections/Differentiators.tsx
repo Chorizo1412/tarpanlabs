@@ -3,45 +3,38 @@ import { Container } from '@/components/ui/Container'
 
 const DIFFERENTIATORS = [
   {
-    icon: '⚡',
-    title: 'Velocidad real',
+    title: 'Resultados en semanas, no en meses.',
     description:
-      'No son proyectos de 6 meses. Las primeras automatizaciones funcionan en semanas. Empezás a ver resultados antes de terminar el café.',
+      'No hacemos proyectos de seis meses que terminan en una presentación. Las primeras automatizaciones funcionan antes de que termine el mes.',
   },
   {
-    icon: '🤝',
-    title: 'No desaparecemos',
+    title: 'Resolvemos el problema, no el síntoma.',
     description:
-      'No somos una agencia que entrega y se va. Somos el equipo que te acompaña, mejora y escala la solución con vos.',
+      'Antes de escribir una línea de código, entendemos qué está fallando y por qué. La solución que entregamos ataca la causa, no los efectos.',
   },
   {
-    icon: '🌎',
-    title: 'LATAM primero',
+    title: 'Sabes exactamente qué estás contratando.',
     description:
-      'Entendemos cómo funciona un negocio latinoamericano: las herramientas que usás, los sistemas que tenés, los clientes que atendés.',
+      'Sin letra chica, sin sorpresas. Antes de empezar tienes claro qué se va a construir, cuándo va a estar listo y qué métricas vamos a medir.',
   },
   {
-    icon: '🔧',
-    title: 'IA aplicada, no teórica',
+    title: 'Tecnología que ya probamos en negocios reales.',
     description:
-      'No vendemos presentaciones sobre el futuro de la IA. Construimos soluciones que funcionan hoy en tu negocio.',
+      'Cada solución que ofrecemos es algo que ya implementamos, rompimos, mejoramos y volvimos a implementar. No experimentamos con tu negocio.',
   },
 ]
 
 export const Differentiators = () => (
-  <Section background="muted">
+  <Section>
     <Container>
-      <h2 className="mb-12 text-center text-3xl font-bold text-brand-800 md:text-4xl">
-        ¿Por qué elegirnos?
+      <h2 className="mb-12 font-display text-3xl font-medium leading-tight tracking-tight text-fg md:text-4xl">
+        Por qué Tarpan Labs
       </h2>
       <ul className="grid grid-cols-1 gap-8 sm:grid-cols-2">
         {DIFFERENTIATORS.map((item) => (
-          <li key={item.title} className="flex gap-4">
-            <span className="flex-shrink-0 text-3xl" aria-hidden="true">{item.icon}</span>
-            <div>
-              <h3 className="mb-2 text-lg font-bold text-brand-800">{item.title}</h3>
-              <p className="text-slate-600">{item.description}</p>
-            </div>
+          <li key={item.title} className="border-l-2 border-accent pl-6">
+            <h3 className="mb-2 font-display text-lg font-medium text-fg">{item.title}</h3>
+            <p className="text-sm leading-relaxed text-fg-muted">{item.description}</p>
           </li>
         ))}
       </ul>

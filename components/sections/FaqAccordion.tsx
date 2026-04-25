@@ -11,14 +11,17 @@ export const FaqAccordion = ({
   faqs,
   title = 'Preguntas frecuentes',
 }: FaqAccordionProps) => (
-  <Section background="muted">
+  <Section>
     <Container className="max-w-3xl">
-      <h2 className="mb-10 text-center text-3xl font-bold text-brand-800">{title}</h2>
-      <dl className="space-y-4">
+      <p className="overline mb-4">FAQ</p>
+      <h2 className="mb-12 font-display text-4xl font-medium leading-tight tracking-tight text-fg">
+        {title}
+      </h2>
+      <dl className="divide-y divide-line border border-line">
         {faqs.map((faq) => (
-          <div key={faq.question} className="rounded-xl border border-slate-200 bg-white p-6">
-            <dt className="font-semibold text-brand-800">{faq.question}</dt>
-            <dd className="mt-2 text-slate-600">{faq.answer}</dd>
+          <div key={faq.question} className="px-6 py-5">
+            <dt className="font-medium text-fg">{faq.question}</dt>
+            <dd className="mt-2 text-sm leading-relaxed text-fg-muted">{faq.answer}</dd>
           </div>
         ))}
       </dl>

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { Container } from '@/components/ui/Container'
 import { Badge } from '@/components/ui/Badge'
 
@@ -14,18 +15,20 @@ export const ResourceHero = ({
   relatedService,
   relatedServiceHref,
 }: ResourceHeroProps) => (
-  <section className="border-b border-slate-200 bg-slate-50 py-16">
+  <section className="border-b border-line pb-16 pt-12">
     <Container className="max-w-3xl">
-      <Badge variant="muted" className="mb-4">
-        Guía
+      <Badge variant="muted" className="mb-6">
+        Recurso
       </Badge>
-      <h1 className="text-3xl font-extrabold text-brand-800 md:text-4xl">{title}</h1>
-      <p className="mt-4 text-lg text-slate-600">{description}</p>
-      <p className="mt-4 text-sm text-slate-500">
+      <h1 className="font-display text-3xl font-medium leading-tight tracking-tight text-fg md:text-4xl">
+        {title}
+      </h1>
+      <p className="mt-4 text-lg text-fg-muted">{description}</p>
+      <p className="mt-4 text-sm text-fg-dim">
         Servicio relacionado:{' '}
-        <a href={relatedServiceHref} className="font-medium text-brand-600 hover:underline">
+        <Link href={relatedServiceHref} className="text-accent hover:underline">
           {relatedService}
-        </a>
+        </Link>
       </p>
     </Container>
   </section>

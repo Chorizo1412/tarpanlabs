@@ -11,7 +11,9 @@ export const validateContactForm = (
 
   if (!data.name.trim()) errors.name = 'El nombre es requerido'
   if (!data.company.trim()) errors.company = 'El nombre de la empresa es requerido'
-  if (!data.country) errors.country = 'El país es requerido'
+  if (!data.industry) errors.industry = 'Seleccioná un rubro'
+  if (!data.teamSize) errors.teamSize = 'Seleccioná el tamaño del equipo'
+  if (!data.process.trim()) errors.process = 'Contanos qué proceso querés resolver'
   if (!data.email.trim()) {
     errors.email = 'El email es requerido'
   } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) {
@@ -25,8 +27,7 @@ const emptyForm: ContactFormData = {
   name: '',
   company: '',
   industry: '',
-  employeeCount: '',
-  country: '',
+  teamSize: '',
   process: '',
   email: '',
   whatsapp: '',
@@ -61,13 +62,13 @@ export const useContactForm = () => {
     if (result.ok) {
       setState({
         status: 'success',
-        message: '¡Recibimos tu consulta! Te respondemos en menos de 48 horas.',
+        message: 'Recibimos tu consulta. Te respondemos en menos de 48 horas.',
       })
       setFormData(emptyForm)
     } else {
       setState({
         status: 'error',
-        message: 'Hubo un error al enviar. Escribinos directamente a contacto@dominio.com',
+        message: 'Hubo un error al enviar. Escribinos a hola@tarpanlabs.com',
       })
     }
   }

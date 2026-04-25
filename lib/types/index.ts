@@ -36,10 +36,12 @@ export type ResourceSection = {
 }
 
 export type CaseStudy = {
+  slug: string
   industry: string
-  problem: string
-  solution: string
-  result: string
+  badge: string
+  headline: string
+  description: string
+  metrics: { label: string; value: string }[]
 }
 
 export type BreadcrumbItem = {
@@ -50,14 +52,14 @@ export type BreadcrumbItem = {
 export type NavItem = {
   label: string
   href: string
+  badge?: string
 }
 
 export type ContactFormData = {
   name: string
   company: string
   industry: string
-  employeeCount: string
-  country: string
+  teamSize: string
   process: string
   email: string
   whatsapp: string

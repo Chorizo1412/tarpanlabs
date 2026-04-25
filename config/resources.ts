@@ -2,104 +2,104 @@ import type { ResourceConfig } from '@/lib/types'
 
 export const resourcesConfig: ResourceConfig[] = [
   {
-    slug: 'como-implementar-ia-en-mi-empresa',
-    title: '¿Cómo implementar IA en mi empresa? Guía para PyMEs',
+    slug: 'que-es-un-agente-de-ia',
+    title: '¿Qué es un agente de IA? Guía para empresas en LATAM',
     description:
-      'Guía práctica para implementar inteligencia artificial en empresas latinoamericanas sin necesitar conocimientos técnicos.',
+      'Explicación clara de qué son los agentes de inteligencia artificial, cómo funcionan y cómo pueden aplicarse en empresas latinoamericanas.',
     keywords: [
-      'cómo implementar IA en mi empresa',
-      'inteligencia artificial para empresas pequeñas',
-      'IA para PyMEs LATAM',
-    ],
-    relatedServiceSlug: 'automatizacion-de-procesos',
-    sections: [
-      {
-        heading: '¿Qué significa implementar IA en una empresa?',
-        content:
-          'Implementar IA en una empresa significa automatizar tareas repetitivas, analizar datos para tomar mejores decisiones y mejorar la atención al cliente usando tecnología de inteligencia artificial. No requiere contratar ingenieros ni cambiar todos tus sistemas: se integra sobre lo que ya tenés.',
-      },
-      {
-        heading: '¿Por dónde empezar?',
-        content:
-          'El primer paso es identificar el proceso que más tiempo consume a tu equipo. Típicamente es: responder consultas de clientes, cargar datos entre sistemas, o generar reportes manualmente. Ese proceso es el candidato ideal para automatizar primero.',
-      },
-      {
-        heading: '¿Qué herramientas de IA existen para empresas?',
-        content:
-          'Las herramientas más usadas para PyMEs son: chatbots (para atención al cliente), plataformas de automatización como n8n o Make (para conectar sistemas), y APIs de IA como OpenAI (para procesar texto e imágenes). Un especialista elige la herramienta correcta según tu proceso específico.',
-      },
-      {
-        heading: '¿Cuánto cuesta implementar IA?',
-        content:
-          'El costo varía según la complejidad. Automatizaciones simples pueden estar listas en 2-3 semanas con una inversión accesible. Proyectos más complejos como un asistente IA entrenado con tu información requieren mayor inversión inicial pero generan ahorro continuo.',
-      },
-    ],
-  },
-  {
-    slug: 'como-hacer-un-chatbot-para-mi-negocio',
-    title: 'Chatbot para tu negocio: guía completa 2026',
-    description:
-      'Todo lo que necesitás saber para tener un chatbot en tu empresa: qué es, cómo funciona, cuánto cuesta y cómo elegir el correcto.',
-    keywords: [
-      'cómo hacer un chatbot para mi negocio',
-      'chatbot WhatsApp empresa',
-      'chatbot para atención al cliente',
+      'qué es un agente de inteligencia artificial',
+      'agentes IA para empresas',
+      'automatización con agentes IA LATAM',
     ],
     relatedServiceSlug: 'chatbots-inteligencia-artificial',
     sections: [
       {
-        heading: '¿Qué es un chatbot para negocios?',
+        heading: '¿Qué es un agente de IA?',
         content:
-          'Un chatbot para negocios es un programa que responde preguntas de clientes de forma automática, sin intervención humana. Funciona en WhatsApp, tu sitio web o redes sociales. Puede responder consultas, calificar leads, agendar turnos y más, las 24 horas.',
+          'Un agente de IA es un sistema que puede percibir su entorno, razonar sobre él y ejecutar acciones de forma autónoma para cumplir un objetivo. A diferencia de un chatbot que responde preguntas, un agente puede buscar información, actualizar bases de datos, enviar notificaciones y coordinar múltiples pasos sin intervención humana en cada uno.',
       },
       {
-        heading: '¿Cuánto cuesta un chatbot para empresa?',
+        heading: '¿Cómo funciona un agente en la práctica?',
         content:
-          'El costo depende del canal (WhatsApp, web, ambos) y la complejidad de las respuestas. Un chatbot básico de FAQ puede estar listo en 2 semanas. Un chatbot integrado a tu CRM o sistema de inventario requiere más tiempo de integración.',
+          'El agente recibe una tarea (por ejemplo: "procesar todas las solicitudes de soporte sin respuesta de las últimas 24 horas"). Luego busca la información necesaria en tus sistemas, analiza cada caso según las reglas configuradas, ejecuta la acción correspondiente (responder, escalar, cerrar) y registra lo que hizo. Todo con trazabilidad completa.',
       },
       {
-        heading: '¿El chatbot puede reemplazar a mi equipo de atención?',
+        heading: '¿Qué procesos se pueden delegar a un agente?',
         content:
-          'No reemplaza al equipo, lo potencia. El chatbot resuelve el 60-80% de las consultas repetitivas (horarios, precios, disponibilidad). Las consultas complejas o quejas se transfieren a un humano. El equipo se enfoca en lo que realmente requiere atención personalizada.',
+          'Cualquier proceso que hoy sigue reglas claras pero consume tiempo humano: calificación de leads, seguimiento de pagos vencidos, actualización de inventario, generación de reportes periódicos, atención de consultas de primer nivel y coordinación entre sistemas. Si puede documentarse como un flujo de decisiones, puede convertirse en un agente.',
       },
       {
-        heading: '¿Qué información necesita el chatbot para funcionar?',
+        heading: '¿Cuánto cuesta implementar un agente de IA?',
         content:
-          'Necesita conocer tus productos o servicios, preguntas frecuentes, políticas de la empresa y cómo escalar consultas. Todo ese conocimiento se carga durante la implementación. El chatbot aprende de tu negocio, no al revés.',
+          'El costo varía según la complejidad del proceso y los sistemas involucrados. Un agente enfocado en un único proceso con integraciones estándar (CRM, email) representa una inversión menor a un recurso humano de tiempo parcial. El ROI se mide en horas liberadas y velocidad de respuesta al cliente.',
       },
     ],
   },
   {
-    slug: 'como-automatizar-procesos-manuales',
-    title: 'Cómo automatizar procesos manuales: guía paso a paso',
+    slug: 'que-es-rag-y-para-que-sirve',
+    title: '¿Qué es RAG en inteligencia artificial? Guía para empresas',
     description:
-      'Guía para identificar, priorizar y automatizar los procesos manuales que más tiempo consumen en tu empresa.',
+      'Todo lo que necesitás saber sobre RAG (Retrieval-Augmented Generation): qué es, cómo funciona y cómo puede potenciar el conocimiento interno de tu empresa.',
     keywords: [
-      'cómo automatizar procesos manuales',
-      'automatización tareas repetitivas empresa',
-      'automatización de procesos para PyMEs',
+      'qué es RAG inteligencia artificial',
+      'RAG para empresas LATAM',
+      'base de conocimiento con IA',
     ],
     relatedServiceSlug: 'automatizacion-de-procesos',
     sections: [
       {
-        heading: '¿Qué procesos manuales se pueden automatizar?',
+        heading: '¿Qué es RAG?',
         content:
-          'Se pueden automatizar todos los procesos que siguen reglas claras y se repiten regularmente: carga de datos entre planillas y sistemas, envío de notificaciones y recordatorios, generación de reportes, procesamiento de pedidos, facturación y seguimiento de leads.',
+          'RAG (Retrieval-Augmented Generation) es una técnica que combina búsqueda semántica con generación de texto. En lugar de que el modelo de IA genere respuestas solo con lo que "aprendió" en su entrenamiento, primero busca información relevante en tus documentos y luego genera la respuesta basándose en lo que encontró. Resultado: respuestas precisas y verificables, no inventadas.',
       },
       {
-        heading: 'Paso 1: Identificar el proceso candidato',
+        heading: '¿Por qué importa para tu empresa?',
         content:
-          'Elegí el proceso que más tiempo consume a tu equipo cada semana. Calculá cuántas horas-persona gasta al mes. Ese número es el ahorro potencial de automatizar. Procesos que toman 10+ horas mensuales son los primeros candidatos.',
+          'Cada empresa tiene conocimiento interno único: manuales operativos, políticas, historiales de clientes, catálogos de productos, contratos. Ese conocimiento existe en archivos dispersos que nadie consulta rápidamente. RAG convierte esa información en un sistema consultable en lenguaje natural, disponible para tu equipo y tus sistemas en tiempo real.',
       },
       {
-        heading: 'Paso 2: Mapear el proceso actual',
+        heading: '¿Qué tipos de documentos puede procesar?',
         content:
-          'Documentá el proceso paso a paso: quién lo hace, qué datos recibe, qué sistemas usa, qué produce como resultado. Este mapa es el input que necesita el equipo técnico para construir la automatización.',
+          'PDFs, documentos Word y Excel, páginas web, bases de datos SQL, espacios de Notion y Confluence, Google Drive y emails. El sistema incluye sincronización automática para que la base de conocimiento refleje siempre la versión más actualizada de tus documentos.',
       },
       {
-        heading: 'Paso 3: Implementar y medir',
+        heading: '¿Cómo evita las "alucinaciones"?',
         content:
-          'La automatización se construye, prueba con datos reales y se ajusta antes de salir a producción. Después del lanzamiento se mide el tiempo ahorrado y los errores eliminados para calcular el ROI real.',
+          'Cada respuesta incluye las fuentes exactas usadas para generarla. Si el sistema no encuentra información relevante en tus documentos, responde "no encontrado" en lugar de inventar. Los umbrales de confianza son configurables según el nivel de riesgo del caso de uso.',
+      },
+    ],
+  },
+  {
+    slug: 'como-escalar-ia-en-tu-empresa',
+    title: 'Cómo escalar IA en tu empresa sin perder el control',
+    description:
+      'Guía para empresas que ya tienen proyectos de IA funcionando y necesitan pasar de prototipo a sistema productivo confiable.',
+    keywords: [
+      'escalar inteligencia artificial en empresa',
+      'AI Ops para PyMEs LATAM',
+      'infraestructura IA producción',
+    ],
+    relatedServiceSlug: 'automatizacion-de-procesos',
+    sections: [
+      {
+        heading: '¿Por qué los proyectos de IA no escalan solos?',
+        content:
+          'Un prototipo de IA puede funcionar bien en las primeras semanas, pero escalar trae problemas que no existían: costos de API que crecen sin control, respuestas que degradan cuando cambia el contexto del negocio, falta de visibilidad sobre qué hace cada sistema y equipos técnicos que no tienen tiempo de mantener todo. Escalar requiere infraestructura, no solo código.',
+      },
+      {
+        heading: 'Los tres pilares de AI Ops',
+        content:
+          'Observabilidad: saber qué hace cada sistema, cuánto cuesta y cuándo falla. Gobernanza: políticas claras sobre qué puede decidir la IA y qué requiere aprobación humana. Optimización continua: mecanismos para mejorar la calidad de respuestas con el tiempo sin reescribir el sistema. Sin estos tres pilares, la IA es una deuda técnica disfrazada de innovación.',
+      },
+      {
+        heading: '¿Cuándo necesitás AI Ops?',
+        content:
+          'Si tenés más de un sistema de IA en producción, si los costos de API son difíciles de predecir, si el equipo técnico no tiene visibilidad clara de qué falla y por qué, o si necesitás cumplir con políticas de auditoría o privacidad de datos, es el momento de pensar en infraestructura. Antes de agregar más proyectos, hay que hacer que los actuales sean confiables.',
+      },
+      {
+        heading: '¿Por dónde empezar?',
+        content:
+          'El primer paso es un diagnóstico del stack actual: qué sistemas están en producción, qué datos procesan, cuáles son los puntos de falla conocidos y qué gaps de observabilidad existen. Con ese mapa claro, se puede priorizar qué resolver primero sin interrumpir lo que ya funciona.',
       },
     ],
   },

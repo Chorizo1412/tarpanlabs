@@ -8,7 +8,7 @@ import { siteConfig } from '@/config/site'
 
 const pageUrl = `${siteConfig.url}/nosotros/`
 const description =
-  'Conocé al equipo detrás de la agencia de IA para empresas latinoamericanas. Especialistas con experiencia real en automatización e inteligencia artificial.'
+  'Somos dos profesionales con más de 20 años de experiencia combinada en tecnología y negocios digitales. Implementamos soluciones de IA para empresas en Latinoamérica.'
 
 export const metadata: Metadata = {
   title: `Nosotros | ${siteConfig.name}`,
@@ -28,24 +28,36 @@ export default function NosotrosPage() {
       />
       <Section>
         <Container className="max-w-3xl">
-          <h1 className="mb-4 text-4xl font-extrabold text-brand-800">
-            El equipo detrás de {siteConfig.name}
+          <h1 className="mb-6 font-display text-4xl font-medium leading-tight tracking-tight text-fg md:text-5xl">
+            Tarpan Labs
           </h1>
-          <p className="mb-8 text-lg text-slate-600">
-            Somos especialistas en inteligencia artificial aplicada a negocios latinoamericanos.
-            No consultores que recomiendan — ejecutores que construyen y acompañan.
+          <p className="mb-8 text-lg text-fg-muted">
+            Somos dos profesionales con más de 20 años de experiencia combinada en tecnología y negocios digitales.
           </p>
-          <div className="rounded-xl border border-amber-200 bg-amber-50 p-6">
-            <p className="font-semibold text-amber-800">Contenido pendiente</p>
-            <p className="mt-2 text-sm text-amber-700">
-              Completar con: foto real + nombre + cargo + LinkedIn de cada fundador, años de
-              experiencia específicos, herramientas certificadas e historia con fechas. Ver
-              sección 04 del plan SEO v2.0 para especificaciones E-E-A-T.
-            </p>
+
+          <div className="mb-8 space-y-6 border-l-2 border-line pl-6">
+            <div>
+              <p className="text-fg-muted">
+                Más de 15 años trabajando en marketing digital y análisis de datos para algunas de las empresas más importantes del mundo. Esa trayectoria se traduce en soluciones que entienden el negocio antes que la tecnología.
+              </p>
+            </div>
+            <div>
+              <p className="text-fg-muted">
+                Más de 5 años desarrollando productos digitales para empresas B2B. Código limpio, arquitectura sólida y foco en que lo que se construye funcione en producción, no solo en una demo.
+              </p>
+            </div>
           </div>
+
+          <p className="text-fg-muted">
+            Tarpan Labs nació para que cualquier empresa pueda acceder a tecnología que antes era exclusiva de las grandes corporaciones. Sin proyectos eternos, sin promesas vacías.
+          </p>
         </Container>
       </Section>
-      <CtaFinal />
+      <CtaFinal
+        title="Hablemos de tu negocio"
+        subtitle="Cuéntanos qué proceso querés resolver. En 48 horas te respondemos."
+        ctaLabel="Hablar con el equipo"
+      />
     </>
   )
 }

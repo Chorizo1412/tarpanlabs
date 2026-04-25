@@ -1,17 +1,169 @@
 @import "tailwindcss";
 
-@theme {
-  --color-brand-900: #0F2744;
-  --color-brand-800: #1E3A5F;
-  --color-brand-700: #1F497D;
-  --color-brand-600: #2563EB;
-  --color-brand-500: #3B82F6;
-  --color-brand-50: #EFF6FF;
-  --color-accent-500: #0EA5E9;
-  --color-accent-400: #38BDF8;
-  --font-sans: var(--font-inter), system-ui, sans-serif;
-}
-
 html {
   scroll-behavior: smooth;
+}
+
+/* ═══════════════════════════════════════════════════════
+   TARPAN LABS — DESIGN TOKENS v1.0
+   Dark-first. Switch theme via [data-theme="a|b"] on <html>.
+   Todos los estilos leen var(--tl-*). Nunca hardcodees colores.
+════════════════════════════════════════════════════════ */
+
+:root,
+[data-theme="a"] {
+  --tl-bg:          #0A0B0D;
+  --tl-bg-elev-1:   #111316;
+  --tl-bg-elev-2:   #181B20;
+  --tl-bg-elev-3:   #1F232A;
+  --tl-line:        #262B33;
+  --tl-line-strong: #3A414D;
+  --tl-fg:          #F2F3F5;
+  --tl-fg-muted:    #9AA3B2;
+  --tl-fg-dim:      #5B6472;
+  --tl-accent:      #D4FF4D;
+  --tl-accent-ink:  #0A0B0D;
+  --tl-accent-2:    #5EE7FF;
+  --tl-success:     #4DFFB5;
+  --tl-warning:     #FFC857;
+  --tl-danger:      #FF5C5C;
+  --tl-radius:      4px;
+  --tl-radius-lg:   8px;
+  --tl-radius-pill: 999px;
+}
+
+[data-theme="b"] {
+  --tl-bg:          #0E0D0B;
+  --tl-bg-elev-1:   #15130F;
+  --tl-bg-elev-2:   #1C1A15;
+  --tl-bg-elev-3:   #24211B;
+  --tl-line:        #2A2722;
+  --tl-line-strong: #3D3931;
+  --tl-fg:          #F5F1EA;
+  --tl-fg-muted:    #A8A296;
+  --tl-fg-dim:      #6B6459;
+  --tl-accent:      #7B5CFF;
+  --tl-accent-ink:  #FFFFFF;
+  --tl-accent-2:    #FF8A4C;
+  --tl-success:     #5EE7A0;
+  --tl-warning:     #FFB84D;
+  --tl-danger:      #FF6B6B;
+  --tl-radius:      10px;
+  --tl-radius-lg:   16px;
+  --tl-radius-pill: 999px;
+}
+
+:root {
+  --tl-font-display: var(--font-space-grotesk), 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --tl-font-body:    var(--font-inter), 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --tl-font-mono:    var(--font-jetbrains-mono), 'JetBrains Mono', ui-monospace, monospace;
+  --tl-shadow-sm: 0 2px 8px rgba(0,0,0,.25);
+  --tl-shadow-md: 0 8px 24px rgba(0,0,0,.35);
+  --tl-shadow-lg: 0 12px 40px rgba(0,0,0,.5);
+}
+
+/* ─── Tailwind v4 theme mapping ─── */
+@theme {
+  --color-bg:          var(--tl-bg);
+  --color-bg-1:        var(--tl-bg-elev-1);
+  --color-bg-2:        var(--tl-bg-elev-2);
+  --color-bg-3:        var(--tl-bg-elev-3);
+  --color-line:        var(--tl-line);
+  --color-line-strong: var(--tl-line-strong);
+  --color-fg:          var(--tl-fg);
+  --color-fg-muted:    var(--tl-fg-muted);
+  --color-fg-dim:      var(--tl-fg-dim);
+  --color-accent:      var(--tl-accent);
+  --color-accent-ink:  var(--tl-accent-ink);
+  --color-accent-2:    var(--tl-accent-2);
+  --color-success:     var(--tl-success);
+  --color-warning:     var(--tl-warning);
+  --color-danger:      var(--tl-danger);
+  --font-display: var(--tl-font-display);
+  --font-sans:    var(--tl-font-body);
+  --font-mono:    var(--tl-font-mono);
+  --radius:      var(--tl-radius);
+  --radius-lg:   var(--tl-radius-lg);
+  --radius-pill: var(--tl-radius-pill);
+  --shadow-sm: var(--tl-shadow-sm);
+  --shadow-md: var(--tl-shadow-md);
+  --shadow-lg: var(--tl-shadow-lg);
+}
+
+/* ─── Base ─── */
+html, body {
+  background-color: var(--tl-bg);
+  color: var(--tl-fg);
+  font-family: var(--tl-font-body);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--tl-font-display);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin: 0;
+  color: var(--tl-fg);
+}
+
+::selection {
+  background-color: var(--tl-accent);
+  color: var(--tl-accent-ink);
+}
+
+:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--tl-accent) 22%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ─── Custom utilities ─── */
+@layer utilities {
+  .bg-accent-subtle    { background-color: color-mix(in srgb, var(--tl-accent) 9%, transparent); }
+  .border-accent-dim   { border-color: color-mix(in srgb, var(--tl-accent) 27%, transparent); }
+  .border-accent-card  { border-color: color-mix(in srgb, var(--tl-accent) 27%, transparent); }
+  .shadow-accent-glow  {
+    box-shadow:
+      0 0 0 4px color-mix(in srgb, var(--tl-accent) 13%, transparent),
+      0 8px 24px color-mix(in srgb, var(--tl-accent) 20%, transparent);
+  }
+  .border-danger-dim         { border-color: color-mix(in srgb, var(--tl-danger) 33%, transparent); }
+  .hover\:bg-danger-subtle:hover { background-color: color-mix(in srgb, var(--tl-danger) 10%, transparent); }
+  .bg-success-subtle  { background-color: color-mix(in srgb, var(--tl-success) 9%, transparent); }
+  .border-success-dim { border-color: color-mix(in srgb, var(--tl-success) 27%, transparent); }
+  .bg-warning-subtle  { background-color: color-mix(in srgb, var(--tl-warning) 9%, transparent); }
+  .border-warning-dim { border-color: color-mix(in srgb, var(--tl-warning) 27%, transparent); }
+  .lab-grid {
+    background-image:
+      repeating-linear-gradient(0deg, var(--tl-line) 0, var(--tl-line) 1px, transparent 1px, transparent 48px),
+      repeating-linear-gradient(90deg, var(--tl-line) 0, var(--tl-line) 1px, transparent 1px, transparent 48px);
+  }
+  .placeholder-stripes {
+    background-image: repeating-linear-gradient(
+      135deg,
+      var(--tl-bg-elev-2) 0, var(--tl-bg-elev-2) 8px,
+      var(--tl-bg-elev-1) 8px, var(--tl-bg-elev-1) 16px
+    );
+  }
+  .lab-corner-tl { position: absolute; top: 12px;    left: 12px;  width: 10px; height: 10px; border-top: 1px solid var(--tl-accent); border-left: 1px solid var(--tl-accent); }
+  .lab-corner-tr { position: absolute; top: 12px;    right: 12px; width: 10px; height: 10px; border-top: 1px solid var(--tl-accent); border-right: 1px solid var(--tl-accent); }
+  .lab-corner-bl { position: absolute; bottom: 12px; left: 12px;  width: 10px; height: 10px; border-bottom: 1px solid var(--tl-accent); border-left: 1px solid var(--tl-accent); }
+  .lab-corner-br { position: absolute; bottom: 12px; right: 12px; width: 10px; height: 10px; border-bottom: 1px solid var(--tl-accent); border-right: 1px solid var(--tl-accent); }
+  .overline {
+    font-family: var(--tl-font-mono);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--tl-fg-muted);
+  }
 }

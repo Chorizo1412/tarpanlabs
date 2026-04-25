@@ -10,22 +10,28 @@ type CtaFinalProps = {
 }
 
 export const CtaFinal = ({
-  title = '¿Qué proceso de tu empresa podría hacer solo?',
-  subtitle = 'Contanos en qué perdiste más tiempo esta semana. En 48 horas te decimos si lo podemos automatizar.',
-  ctaLabel = 'Quiero una consulta gratuita',
+  title = '¿Qué proceso de tu empresa podría funcionar solo?',
+  subtitle = 'Cuéntanos en qué pierdes más tiempo. En 48 horas te decimos si lo podemos resolver.',
+  ctaLabel = 'Solicitar consulta gratuita',
   ctaHref = '/contacto/',
 }: CtaFinalProps) => (
-  <Section background="brand">
-    <Container className="text-center">
-      <h2 className="text-3xl font-bold md:text-4xl">{title}</h2>
-      <p className="mx-auto mt-4 max-w-xl text-lg text-slate-300">{subtitle}</p>
-      <Button
-        href={ctaHref}
-        size="lg"
-        className="mt-8 bg-white text-brand-800 hover:bg-slate-100"
-      >
-        {ctaLabel}
-      </Button>
+  <Section id="contacto" className="border-t border-line">
+    <Container>
+      <div className="relative border border-accent-dim bg-bg-1 p-10 shadow-accent-glow md:p-16">
+        <div className="lab-corner-tl" />
+        <div className="lab-corner-tr" />
+        <div className="lab-corner-bl" />
+        <div className="lab-corner-br" />
+
+        <p className="overline mb-6">Siguiente paso</p>
+        <h2 className="mb-4 max-w-2xl font-display text-4xl font-medium leading-tight tracking-tight text-fg md:text-5xl">
+          {title}
+        </h2>
+        <p className="mb-10 max-w-xl text-fg-muted">{subtitle}</p>
+        <Button href={ctaHref} size="lg">
+          {ctaLabel}
+        </Button>
+      </div>
     </Container>
   </Section>
 )

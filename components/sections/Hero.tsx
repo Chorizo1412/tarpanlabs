@@ -1,28 +1,35 @@
 import { Container } from '@/components/ui/Container'
 import { Button } from '@/components/ui/Button'
+import { Badge } from '@/components/ui/Badge'
 import { siteConfig } from '@/config/site'
 
 export const Hero = () => (
-  <section className="bg-gradient-to-b from-brand-900 to-brand-800 py-24 text-white md:py-32">
-    <Container className="text-center">
-      <h1 className="mx-auto max-w-4xl text-4xl font-extrabold leading-tight tracking-tight md:text-6xl">
-        Automatizá los procesos que frenan tu negocio.{' '}
-        <span className="text-accent-400">Nosotros los convertimos en ventaja competitiva.</span>
+  <section id="inicio" className="lab-grid relative overflow-hidden border-b border-line pb-24 pt-20 md:pb-32 md:pt-28">
+    <div className="lab-corner-tl" />
+    <div className="lab-corner-tr" />
+    <div className="lab-corner-bl" />
+    <div className="lab-corner-br" />
+
+    <Container className="relative">
+      <Badge variant="accent" dot className="mb-8">
+        IA para empresas · LATAM
+      </Badge>
+
+      <h1 className="max-w-4xl font-display text-5xl font-medium leading-[1.05] tracking-tight text-fg md:text-7xl">
+        Inteligencia Artificial para empresas
+        <br />
+        <span className="text-accent">que no tienen tiempo que perder.</span>
       </h1>
-      <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-300 md:text-xl">
-        Somos una agencia especializada en Inteligencia Artificial para empresas en latinoamérica.
-        Chatbots, automatizaciones y tecnología que funciona desde la primera semana.
+
+      <p className="mt-6 max-w-xl text-lg text-fg-muted md:text-xl">
+        {siteConfig.description}
       </p>
-      <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+
+      <div className="mt-10 flex flex-wrap gap-4">
         <Button href={siteConfig.cta.primaryHref} size="lg">
           {siteConfig.cta.primary}
         </Button>
-        <Button
-          href={siteConfig.cta.secondaryHref}
-          variant="secondary"
-          size="lg"
-          className="border-white text-white hover:bg-white/10"
-        >
+        <Button href={siteConfig.cta.secondaryHref} variant="secondary" size="lg">
           {siteConfig.cta.secondary}
         </Button>
       </div>

@@ -8,7 +8,7 @@ import { siteConfig } from '@/config/site'
 
 const pageUrl = `${siteConfig.url}/contacto/`
 const description =
-  'Contanos qué proceso querés automatizar. Te respondemos en menos de 48 horas con una propuesta concreta.'
+  'Cuéntanos qué proceso o problema quieres resolver. En menos de 48 horas te respondemos con una evaluación honesta de si podemos ayudarte y cómo.'
 
 export const metadata: Metadata = {
   title: `Contacto | ${siteConfig.name}`,
@@ -27,13 +27,12 @@ export default function ContactoPage() {
         })}
       />
       <Section>
-        <Container className="max-w-2xl">
-          <h1 className="mb-2 text-4xl font-extrabold text-brand-800">
-            ¿Qué proceso podría hacer solo?
+        <Container className="max-w-xl">
+          <h1 className="mb-3 font-display text-4xl font-medium leading-tight tracking-tight text-fg">
+            Hablemos de tu negocio
           </h1>
-          <p className="mb-10 text-lg text-slate-600">
-            Contanos en qué perdiste más tiempo esta semana. En 48 horas te decimos si lo podemos
-            automatizar.
+          <p className="mb-10 text-fg-muted">
+            Cuéntanos qué proceso o problema quieres resolver. En menos de 48 horas te respondemos con una evaluación honesta de si podemos ayudarte y cómo.
           </p>
           <ContactForm />
         </Container>

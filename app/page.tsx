@@ -4,7 +4,6 @@ import { TrustBar } from '@/components/sections/TrustBar'
 import { ServicesGrid } from '@/components/sections/ServicesGrid'
 import { Differentiators } from '@/components/sections/Differentiators'
 import { CaseStudies } from '@/components/sections/CaseStudies'
-import { FaqAccordion } from '@/components/sections/FaqAccordion'
 import { CtaFinal } from '@/components/sections/CtaFinal'
 import { JsonLd } from '@/components/ui/JsonLd'
 import { buildFaqSchema, buildWebPageSchema } from '@/lib/utils/schema'
@@ -12,43 +11,33 @@ import { siteConfig } from '@/config/site'
 
 const HOME_FAQS = [
   {
-    question: '¿Qué es una agencia de IA para empresas?',
+    question: '¿Qué tipo de empresas trabajan con Tarpan Labs?',
     answer:
-      'Una agencia de IA ayuda a empresas a implementar soluciones de inteligencia artificial como chatbots, automatizaciones y análisis de datos para mejorar sus operaciones y reducir costos.',
+      'Trabajamos con PyMEs de cualquier industria en Latinoamérica que quieren automatizar procesos, mejorar la atención al cliente o aprovechar sus datos con inteligencia artificial. No se necesita un equipo técnico interno.',
   },
   {
-    question: '¿En cuánto tiempo veo resultados?',
+    question: '¿En cuánto tiempo se ven los primeros resultados?',
     answer:
-      'Las automatizaciones simples funcionan en 2-3 semanas. Proyectos más complejos como un SaaS a medida requieren entre 2 y 4 meses.',
+      'Las primeras implementaciones están en producción en menos de 4 semanas. No hacemos proyectos eternos: empezamos por el proceso que más impacto tiene y escalamos desde ahí.',
   },
   {
     question: '¿Necesito saber de tecnología para trabajar con ustedes?',
     answer:
-      'No. Nos encargamos de toda la parte técnica. Vos nos contás el problema, nosotros construimos la solución.',
+      'No. Nuestro trabajo es entender tu proceso de negocio y construir la solución técnica. Tu equipo solo necesita conocer el problema que queremos resolver juntos.',
   },
   {
-    question: '¿Trabajan con empresas de cualquier tamaño?',
+    question: '¿En qué países trabajan?',
     answer:
-      'Sí. Trabajamos con empresas desde 5 empleados hasta corporaciones medianas. El requisito es tener procesos claros que quieran mejorar.',
-  },
-  {
-    question: '¿Qué países cubren?',
-    answer:
-      'Trabajamos con empresas en toda América Latina: Argentina, México, Colombia, Chile, Uruguay, Perú y el resto de la región. Todo de forma remota.',
-  },
-  {
-    question: '¿Qué incluye el acompañamiento continuo?',
-    answer:
-      'Después de cada implementación el equipo sigue disponible para mejoras, ajustes y soporte. No se cobra extra por bugs o ajustes menores.',
+      'Trabajamos con empresas en Argentina, México, Colombia, Chile y toda Latinoamérica. Todo de forma remota, sin necesidad de presencia física.',
   },
 ]
 
 export const metadata: Metadata = {
-  title: `Agencia de IA para empresas en LATAM | ${siteConfig.name}`,
+  title: `${siteConfig.name} | Inteligencia Artificial para empresas en LATAM`,
   description: siteConfig.description,
   alternates: { canonical: `${siteConfig.url}/` },
   openGraph: {
-    title: `Agencia de IA para empresas en LATAM | ${siteConfig.name}`,
+    title: `${siteConfig.name} | Inteligencia Artificial para empresas en LATAM`,
     description: siteConfig.description,
     url: `${siteConfig.url}/`,
   },
@@ -60,7 +49,7 @@ export default function HomePage() {
       <JsonLd data={buildFaqSchema(HOME_FAQS)} />
       <JsonLd
         data={buildWebPageSchema({
-          name: `Agencia de IA para empresas en LATAM | ${siteConfig.name}`,
+          name: `${siteConfig.name} | Inteligencia Artificial para empresas en LATAM`,
           description: siteConfig.description,
           url: `${siteConfig.url}/`,
         })}
@@ -70,7 +59,6 @@ export default function HomePage() {
       <ServicesGrid />
       <Differentiators />
       <CaseStudies />
-      <FaqAccordion faqs={HOME_FAQS} />
       <CtaFinal />
     </>
   )

@@ -15,11 +15,10 @@ export const appendLead = async (data: ContactFormData): Promise<void> => {
     data.name,
     data.company,
     data.industry,
-    data.employeeCount,
-    data.country,
+    data.teamSize,
     data.process,
     data.email,
-    data.whatsapp ?? '',
+    data.whatsapp,
   ]
 
   const res = await fetch(sheetsAppendUrl(process.env.GOOGLE_SHEET_ID!), {

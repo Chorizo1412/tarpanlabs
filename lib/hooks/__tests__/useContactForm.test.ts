@@ -5,10 +5,9 @@ describe('validateContactForm', () => {
   const validData = {
     name: 'Juan García',
     company: 'Mi Empresa',
-    industry: 'comercio',
-    employeeCount: '6-20',
-    country: 'Argentina',
-    process: 'Atención al cliente manual',
+    industry: 'Comercio y Retail',
+    teamSize: '6–20',
+    process: 'Quiero automatizar la atención al cliente.',
     email: 'juan@empresa.com',
     whatsapp: '',
   }
@@ -32,9 +31,19 @@ describe('validateContactForm', () => {
     expect(errors.company).toBeDefined()
   })
 
-  it('requires country', () => {
-    const errors = validateContactForm({ ...validData, country: '' })
-    expect(errors.country).toBeDefined()
+  it('requires industry', () => {
+    const errors = validateContactForm({ ...validData, industry: '' })
+    expect(errors.industry).toBeDefined()
+  })
+
+  it('requires teamSize', () => {
+    const errors = validateContactForm({ ...validData, teamSize: '' })
+    expect(errors.teamSize).toBeDefined()
+  })
+
+  it('requires process', () => {
+    const errors = validateContactForm({ ...validData, process: '' })
+    expect(errors.process).toBeDefined()
   })
 
   it('allows empty whatsapp', () => {
