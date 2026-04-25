@@ -15,7 +15,7 @@ export const CtaFinal = ({
   ctaLabel = 'Solicitar consulta gratuita',
   ctaHref = '/contacto/',
 }: CtaFinalProps) => (
-  <Section id="contacto" className="border-t border-line">
+  <Section id="contacto" className="border-t border-line" data-animate>
     <Container>
       <div className="relative border border-accent-dim bg-bg-1 p-10 shadow-accent-glow md:p-16">
         <div className="lab-corner-tl" />

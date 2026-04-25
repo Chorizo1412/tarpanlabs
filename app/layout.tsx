@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Space_Grotesk, Inter, JetBrains_Mono } from 'next/font/google'
 import { Navbar } from '@/components/sections/Navbar'
 import { Footer } from '@/components/sections/Footer'
+import { ScrollAnimations } from '@/components/ui/ScrollAnimations'
 import { JsonLd } from '@/components/ui/JsonLd'
 import { buildOrganizationSchema } from '@/lib/utils/schema'
 import { siteConfig } from '@/config/site'
@@ -51,6 +52,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     >
       <body className="min-h-screen font-sans antialiased">
         <JsonLd data={buildOrganizationSchema()} />
+        <ScrollAnimations />
         <Navbar />
         <main>{children}</main>
         <Footer />

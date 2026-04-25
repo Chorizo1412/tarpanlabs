@@ -15,7 +15,7 @@ const SERVICE_ICONS: Record<string, LucideIcon> = {
 }
 
 export const ServicesGrid = () => (
-  <Section id="servicios">
+  <Section id="servicios" data-animate>
     <Container>
       <h2 className="mb-4 max-w-xl font-display text-4xl font-medium leading-tight tracking-tight text-fg md:text-5xl">
         Soluciones concretas para problemas reales
@@ -33,7 +33,7 @@ export const ServicesGrid = () => (
                 <span className="mb-6 block font-mono text-xs text-fg-dim">
                   0{i + 1}
                 </span>
-                <span className="mb-4 block text-accent" aria-hidden="true">
+                <span className="mb-4 flex justify-center text-accent" aria-hidden="true">
                   {Icon && <Icon size={28} strokeWidth={1.5} />}
                 </span>
                 <h3 className="mb-3 font-display text-xl font-medium text-fg">

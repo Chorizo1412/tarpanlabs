@@ -117,7 +117,7 @@ export const servicesConfig: ServiceConfig[] = [
   },
   {
     slug: 'auditoria-seo',
-    name: 'Auditoría SEO',
+    name: 'Auditoría SEO y GEO',
     icon: '◆',
     shortDescription:
       '¿Tu producto no aparece en Google ni en herramientas de IA? Auditamos tu sitio y te entregamos pasos concretos para solucionarlo.',
