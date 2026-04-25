@@ -6,8 +6,8 @@ import { siteConfig } from '@/config/site'
 export const Footer = () => (
   <footer className="border-t border-line bg-bg">
     <Container className="py-16">
-      <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
-        <div className="md:col-span-1">
+      <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
+        <div>
           <Image
             src="/logo-tarpan.svg"
             alt={siteConfig.name}
@@ -18,7 +18,7 @@ export const Footer = () => (
           <p className="text-sm text-fg-dim">{siteConfig.tagline}</p>
         </div>
 
-        <div className="md:col-span-2">
+        <div>
           <p className="overline mb-4">Servicios</p>
           <ul className="grid grid-cols-2 gap-x-8 gap-y-2.5 text-sm text-fg-muted">
             <li><Link href="/servicios/chatbots-inteligencia-artificial/" className="transition-colors hover:text-fg">Chatbots con IA</Link></li>
