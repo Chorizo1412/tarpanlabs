@@ -2,6 +2,7 @@ import type { NextRequest } from 'next/server'
 import { NextResponse } from 'next/server'
 import type { ContactFormData } from '@/lib/types'
 import { appendLead } from '@/lib/api/sheets'
+import { sendLeadNotification } from '@/lib/api/email'
 
 export const POST = async (req: NextRequest) => {
   const body = (await req.json()) as ContactFormData
@@ -16,6 +17,13 @@ export const POST = async (req: NextRequest) => {
     const message = err instanceof Error ? err.message : 'Unknown error'
     console.error('[contact/route] Sheets error:', message)
     return NextResponse.json({ error: 'Storage error' }, { status: 500 })
+  }
+
+  try {
+    await sendLeadNotification(body)
+  } catch (err) {
+    const message = err instanceof Error ? err.message : 'Unknown error'
+    console.error('[contact/route] Email error:', message)
   }
 
   return NextResponse.json({ ok: true }, { status: 201 })
