@@ -15,7 +15,7 @@ const SERVICE_ICONS: Record<string, LucideIcon> = {
 }
 
 export const ServicesGrid = () => (
-  <Section id="servicios" data-animate>
+  <Section id="servicios" data-animate className="pt-24 pb-10 md:pt-32 md:pb-12">
     <Container>
       <h2 className="mb-4 max-w-xl font-display text-4xl font-medium leading-tight tracking-tight text-fg md:text-5xl">
         Soluciones concretas para problemas reales
