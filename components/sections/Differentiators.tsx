@@ -27,7 +27,7 @@ const DIFFERENTIATORS = [
 export const Differentiators = () => (
   <Section>
     <Container>
-      <h2 className="mb-12 font-display text-3xl font-medium leading-tight tracking-tight text-fg md:text-4xl">
+      <h2 className="mb-16 font-display text-3xl font-medium leading-tight tracking-tight text-fg md:text-4xl">
         Por qué Tarpan Labs
       </h2>
       <ul className="grid grid-cols-1 gap-8 sm:grid-cols-2">

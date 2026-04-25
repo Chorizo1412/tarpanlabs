@@ -3,7 +3,6 @@ import { Hero } from '@/components/sections/Hero'
 import { TrustBar } from '@/components/sections/TrustBar'
 import { ServicesGrid } from '@/components/sections/ServicesGrid'
 import { Differentiators } from '@/components/sections/Differentiators'
-import { CaseStudies } from '@/components/sections/CaseStudies'
 import { CtaFinal } from '@/components/sections/CtaFinal'
 import { JsonLd } from '@/components/ui/JsonLd'
 import { buildFaqSchema, buildWebPageSchema } from '@/lib/utils/schema'
@@ -33,11 +32,11 @@ const HOME_FAQS = [
 ]
 
 export const metadata: Metadata = {
-  title: `${siteConfig.name} | Inteligencia Artificial para empresas en LATAM`,
+  title: `${siteConfig.name} | Inteligencia Artificial para empresas`,
   description: siteConfig.description,
   alternates: { canonical: `${siteConfig.url}/` },
   openGraph: {
-    title: `${siteConfig.name} | Inteligencia Artificial para empresas en LATAM`,
+    title: `${siteConfig.name} | Inteligencia Artificial para empresas`,
     description: siteConfig.description,
     url: `${siteConfig.url}/`,
   },
@@ -58,7 +57,6 @@ export default function HomePage() {
       <TrustBar />
       <ServicesGrid />
       <Differentiators />
-      <CaseStudies />
       <CtaFinal />
     </>
   )

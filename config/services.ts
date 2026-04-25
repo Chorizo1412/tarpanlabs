@@ -6,7 +6,7 @@ export const servicesConfig: ServiceConfig[] = [
     name: 'Chatbots con IA',
     icon: '◉',
     shortDescription:
-      'Responde como lo haría tu mejor agente. A cualquier hora, sin que el cliente note la diferencia.',
+      'Responde como lo haría tu experto más experimentado. A cualquier hora, sin que el cliente note la diferencia.',
     fullDescription:
       'Un chatbot mal hecho suena a bot. El nuestro no. Desarrollamos asistentes conversacionales que responden como lo haría tu mejor agente de atención — con el tono, el criterio y la información de tu empresa. ' +
       'Entrenamos el chatbot con la información real de tu negocio: productos, procesos, preguntas frecuentes, políticas. El resultado es un asistente que entiende el contexto, mantiene conversaciones coherentes y escala al equipo humano solo cuando la situación lo requiere.',
@@ -44,7 +44,7 @@ export const servicesConfig: ServiceConfig[] = [
     name: 'Automatización de procesos',
     icon: '◈',
     shortDescription:
-      'Si alguien en tu empresa hace la misma tarea repetitiva todos los días, se puede automatizar.',
+      'El tiempo que tu equipo gasta en tareas repetitivas es tiempo que no están dedicando a vender. Lo identificamos y lo automatizamos.',
     fullDescription:
       'Identificamos los procesos manuales que más tiempo y recursos consumen en tu empresa y los automatizamos usando inteligencia artificial e integraciones entre sistemas. ' +
       'El resultado es un equipo que trabaja menos en tareas operativas y más en hacer crecer el negocio. Trabajamos con las herramientas que ya usás: CRMs, ERPs, hojas de cálculo, plataformas de ecommerce.',
@@ -82,7 +82,7 @@ export const servicesConfig: ServiceConfig[] = [
     name: 'Desarrollo Web',
     icon: '◇',
     shortDescription:
-      'Un sitio que carga rápido, aparece en Google y convierte visitas en clientes.',
+      'Sitios rápidos, optimizados para Google y preparados para aparecer en búsquedas de IA como ChatGPT o Gemini.',
     fullDescription:
       'Un sitio web que no aparece en Google, carga lento o no convierte visitas en clientes no es un activo — es un costo. Lo construimos bien desde el principio. ' +
       'Desarrollamos sitios web rápidos, técnicamente sólidos y optimizados para posicionarse en buscadores y en herramientas de IA como ChatGPT y Perplexity. Diseñados para convertir, no solo para verse bien.',
@@ -120,7 +120,7 @@ export const servicesConfig: ServiceConfig[] = [
     name: 'Auditoría SEO',
     icon: '◆',
     shortDescription:
-      'Tu sitio no aparece en Google ni en ChatGPT. Te decimos por qué y cómo solucionarlo.',
+      '¿Tu producto no aparece en Google ni en herramientas de IA? Auditamos tu sitio y te entregamos pasos concretos para solucionarlo.',
     fullDescription:
       'En 2026, aparecer en los resultados de búsqueda significa aparecer tanto en Google como en las respuestas que generan herramientas de IA como ChatGPT, Perplexity o Google AI Overview. La auditoría cubre ambos frentes. ' +
       'Analizamos el estado técnico y de contenido de tu sitio e identificamos qué impide que aparezca donde tiene que aparecer. Entregamos un plan de acción priorizado — no una lista interminable de problemas sin solución.',
@@ -155,10 +155,10 @@ export const servicesConfig: ServiceConfig[] = [
   },
   {
     slug: 'auditoria-publicidad-digital',
-    name: 'Auditoría de Publicidad Digital',
+    name: 'Auditoría de Anuncios',
     icon: '◑',
     shortDescription:
-      'Estás invirtiendo en anuncios pero los resultados no justifican el gasto. Lo auditamos.',
+      '¿Inviertes en publicidad pero no lo ves reflejado en ventas? Auditamos tus campañas y te decimos exactamente dónde se está yendo el dinero y cómo solucionarlo.',
     fullDescription:
       'Auditamos las campañas activas en Google Ads, Meta Ads o ambas. Identificamos ineficiencias, segmentaciones incorrectas, creatividades que no funcionan y configuraciones que desperdician presupuesto. ' +
       'Entregamos un diagnóstico claro y recomendaciones concretas. No tocamos ni modificamos nada durante el proceso — solo analizamos con acceso de lectura.',
@@ -196,7 +196,7 @@ export const servicesConfig: ServiceConfig[] = [
     name: 'Desarrollo de Software a Medida',
     icon: '⬡',
     shortDescription:
-      'Necesitas una herramienta que no existe en el mercado. La construimos.',
+      'Si ninguna herramienta del mercado resuelve lo que necesitas, la construimos. Soluciones a medida, en semanas.',
     fullDescription:
       'Desarrollamos aplicaciones web y plataformas diseñadas para los procesos específicos de tu negocio. Sin funcionalidades que no usás, sin adaptaciones forzadas a herramientas genéricas. ' +
       'Definimos el alcance exacto antes de escribir una línea de código. Desarrollamos en ciclos cortos con entregas funcionales para que veas el progreso real. El código fuente es tuyo.',
