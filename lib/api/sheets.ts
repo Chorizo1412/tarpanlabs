@@ -2,7 +2,7 @@ import { getGoogleAccessToken } from '@/lib/utils/googleAuth'
 import type { ContactFormData } from '@/lib/types'
 
 const sheetsAppendUrl = (sheetId: string) =>
-  `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/Sheet1!A1:append?valueInputOption=RAW&insertDataOption=INSERT_ROWS`
+  `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/A1:append?valueInputOption=RAW&insertDataOption=INSERT_ROWS`
 
 export const appendLead = async (data: ContactFormData): Promise<void> => {
   const token = await getGoogleAccessToken(
