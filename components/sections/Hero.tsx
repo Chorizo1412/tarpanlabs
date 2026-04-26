@@ -10,10 +10,10 @@ export const Hero = () => (
         IA para empresas
       </Badge>
 
-      <h1 className="max-w-4xl font-display text-5xl font-medium leading-[1.05] tracking-tight text-fg md:text-7xl">
-        Inteligencia Artificial para empresas
+      <h1 className="max-w-3xl font-display text-5xl font-medium leading-[1.05] tracking-tight text-fg md:text-7xl">
+        Menos operación.
         <br />
-        <span className="text-accent">que no tienen tiempo que perder.</span>
+        <span className="text-accent">Más negocio.</span>
       </h1>
 
       <p className="mt-6 max-w-xl text-lg text-fg-muted md:text-xl">

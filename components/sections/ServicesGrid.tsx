@@ -18,10 +18,10 @@ export const ServicesGrid = () => (
   <Section id="servicios" data-animate className="pt-24 pb-10 md:pt-32 md:pb-12">
     <Container>
       <h2 className="mb-4 max-w-xl font-display text-4xl font-medium leading-tight tracking-tight text-fg md:text-5xl">
-        Soluciones concretas para problemas reales
+        Soluciones que ya funcionan en negocios como el tuyo.
       </h2>
       <p className="mb-16 max-w-xl text-fg-muted">
-        Cada servicio resuelve algo específico. Sin promesas vacías, sin proyectos que no terminan.
+        No son prototipos. Son implementaciones reales con alcance definido, plazo real y métricas de éxito.
       </p>
 
       <ul className="grid grid-cols-1 gap-px border border-line sm:grid-cols-2 md:grid-cols-3">

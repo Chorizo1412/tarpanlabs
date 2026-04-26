@@ -1,9 +1,9 @@
 export const siteConfig = {
-  name: 'Tarpan Labs',
-  tagline: 'Inteligencia Artificial para empresas.',
+  name: 'tarpan labs',
+  tagline: 'Implementamos. No prometemos.',
   url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://tarpanlabs.com',
   description:
-    'Tarpan Labs implementa soluciones de IA que eliminan el trabajo manual, mejoran la atención al cliente y generan resultados desde la primer implementación.',
+    'Automatizamos los procesos que consumen tiempo de tu equipo. Chatbots entrenados que responden como humanos, flujos automatizados y sistemas que funcionan desde el primer día.',
   social: {
     linkedin: 'https://linkedin.com/company/tarpan-labs',
     instagram: 'https://instagram.com/tarpanlabs',
