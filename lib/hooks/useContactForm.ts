@@ -11,9 +11,9 @@ export const validateContactForm = (
 
   if (!data.name.trim()) errors.name = 'El nombre es requerido'
   if (!data.company.trim()) errors.company = 'El nombre de la empresa es requerido'
-  if (!data.industry) errors.industry = 'Seleccioná un rubro'
-  if (!data.teamSize) errors.teamSize = 'Seleccioná el tamaño del equipo'
-  if (!data.process.trim()) errors.process = 'Contanos qué proceso querés resolver'
+  if (!data.industry) errors.industry = 'Selecciona un rubro'
+  if (!data.teamSize) errors.teamSize = 'Selecciona el tamaño del equipo'
+  if (!data.process.trim()) errors.process = 'Cuéntanos qué proceso quieres resolver'
   if (!data.email.trim()) {
     errors.email = 'El email es requerido'
   } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) {

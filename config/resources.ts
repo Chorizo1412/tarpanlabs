@@ -39,7 +39,7 @@ export const resourcesConfig: ResourceConfig[] = [
     slug: 'que-es-rag-y-para-que-sirve',
     title: '¿Qué es RAG en inteligencia artificial? Guía para empresas',
     description:
-      'Todo lo que necesitás saber sobre RAG (Retrieval-Augmented Generation): qué es, cómo funciona y cómo puede potenciar el conocimiento interno de tu empresa.',
+      'Todo lo que necesitas saber sobre RAG (Retrieval-Augmented Generation): qué es, cómo funciona y cómo puede potenciar el conocimiento interno de tu empresa.',
     keywords: [
       'qué es RAG inteligencia artificial',
       'RAG para empresas LATAM',
@@ -94,7 +94,7 @@ export const resourcesConfig: ResourceConfig[] = [
       {
         heading: '¿Cuándo necesitás AI Ops?',
         content:
-          'Si tenés más de un sistema de IA en producción, si los costos de API son difíciles de predecir, si el equipo técnico no tiene visibilidad clara de qué falla y por qué, o si necesitás cumplir con políticas de auditoría o privacidad de datos, es el momento de pensar en infraestructura. Antes de agregar más proyectos, hay que hacer que los actuales sean confiables.',
+          'Si tienes más de un sistema de IA en producción, si los costos de API son difíciles de predecir, si el equipo técnico no tiene visibilidad clara de qué falla y por qué, o si necesitas cumplir con políticas de auditoría o privacidad de datos, es el momento de pensar en infraestructura. Antes de agregar más proyectos, hay que hacer que los actuales sean confiables.',
       },
       {
         heading: '¿Por dónde empezar?',

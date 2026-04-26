@@ -10,7 +10,7 @@ type CtaFinalProps = {
 }
 
 export const CtaFinal = ({
-  title = 'Contanos qué está frenando tu negocio.',
+  title = 'Cuéntanos qué está frenando tu negocio.',
   subtitle = 'Sin reuniones interminables. En 48 horas te respondemos con una evaluación concreta de si podemos ayudarte y por dónde empezaríamos.',
   ctaLabel = 'Solicitar consulta gratuita',
   ctaHref = '/contacto/',

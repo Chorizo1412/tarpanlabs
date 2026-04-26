@@ -76,8 +76,8 @@ export default async function ResourcePage({ params }: { params: Promise<Params>
         </Container>
       </Section>
       <CtaFinal
-        title="¿Querés implementar esto en tu empresa?"
-        subtitle="Contanos tu proceso. En 48 horas te decimos cómo podemos ayudarte."
+        title="¿Quieres implementar esto en tu empresa?"
+        subtitle="Cuéntanos tu proceso. En 48 horas te decimos cómo podemos ayudarte."
       />
     </>
   )

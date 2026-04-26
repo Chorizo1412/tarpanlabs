@@ -105,7 +105,7 @@ export default function CasosPage() {
       </Section>
       <CtaFinal
         title="¿Tu empresa podría ser el próximo caso?"
-        subtitle="Contanos el proceso. En 48 horas te decimos si lo podemos resolver."
+        subtitle="Cuéntanos el proceso. En 48 horas te decimos si lo podemos resolver."
       />
     </>
   )

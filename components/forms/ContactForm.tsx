@@ -81,7 +81,7 @@ export const ContactForm = () => {
             onChange={handleChange}
             className={fieldClass(!!errors.industry)}
           >
-            <option value="">Seleccioná un rubro</option>
+            <option value="">Selecciona un rubro</option>
             {INDUSTRIES.map((ind) => (
               <option key={ind} value={ind}>{ind}</option>
             ))}
@@ -98,7 +98,7 @@ export const ContactForm = () => {
             onChange={handleChange}
             className={fieldClass(!!errors.teamSize)}
           >
-            <option value="">Seleccioná una opción</option>
+            <option value="">Selecciona una opción</option>
             {TEAM_SIZES.map((s) => (
               <option key={s} value={s}>{s}</option>
             ))}
@@ -116,7 +116,7 @@ export const ContactForm = () => {
           value={formData.process}
           onChange={handleChange}
           rows={4}
-          placeholder="Contanos qué proceso querés automatizar o mejorar. Qué hace tu equipo manualmente hoy, qué resultado esperás."
+          placeholder="Cuéntanos qué proceso quieres automatizar o mejorar. Qué hace tu equipo manualmente hoy, qué resultado esperas."
           className={fieldClass(!!errors.process)}
         />
         {errors.process && <p className="mt-1 text-xs text-danger">{errors.process}</p>}

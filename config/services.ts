@@ -47,7 +47,7 @@ export const servicesConfig: ServiceConfig[] = [
       'El tiempo que tu equipo gasta en tareas repetitivas es tiempo que no están dedicando a vender. Lo identificamos y lo automatizamos.',
     fullDescription:
       'Identificamos los procesos manuales que más tiempo y recursos consumen en tu empresa y los automatizamos usando inteligencia artificial e integraciones entre sistemas. ' +
-      'El resultado es un equipo que trabaja menos en tareas operativas y más en hacer crecer el negocio. Trabajamos con las herramientas que ya usás: CRMs, ERPs, hojas de cálculo, plataformas de ecommerce.',
+      'El resultado es un equipo que trabaja menos en tareas operativas y más en hacer crecer el negocio. Trabajamos con las herramientas que ya usas: CRMs, ERPs, hojas de cálculo, plataformas de ecommerce.',
     keywords: [
       'automatización de procesos con IA para empresas',
       'automatización de tareas repetitivas LATAM',
@@ -63,7 +63,7 @@ export const servicesConfig: ServiceConfig[] = [
       {
         question: '¿Necesito cambiar los sistemas que ya uso?',
         answer:
-          'No. Trabajamos con las herramientas que ya tenés: CRMs, ERPs, hojas de cálculo, plataformas de ecommerce. La automatización conecta lo que ya usás, no lo reemplaza.',
+          'No. Trabajamos con las herramientas que ya tienes: CRMs, ERPs, hojas de cálculo, plataformas de ecommerce. La automatización conecta lo que ya usas, no lo reemplaza.',
       },
       {
         question: '¿Cómo sé si un proceso vale la pena automatizar?',
@@ -139,7 +139,7 @@ export const servicesConfig: ServiceConfig[] = [
       {
         question: '¿Qué tiene que ver ChatGPT con el SEO de mi empresa?',
         answer:
-          'Una parte creciente de las búsquedas se resuelven con herramientas de IA. Aparecer ahí requiere una optimización adicional (GEO/AEO) que la auditoría también cubre. Si tu competencia aparece en las respuestas de ChatGPT y vos no, estás perdiendo visibilidad.',
+          'Una parte creciente de las búsquedas se resuelven con herramientas de IA. Aparecer ahí requiere una optimización adicional (GEO/AEO) que la auditoría también cubre. Si tu competencia aparece en las respuestas de ChatGPT y tú no, estás perdiendo visibilidad.',
       },
       {
         question: '¿Cuánto tarda la auditoría?',
@@ -172,7 +172,7 @@ export const servicesConfig: ServiceConfig[] = [
       {
         question: '¿Cómo sé si mi agencia está usando bien el presupuesto?',
         answer:
-          'Los síntomas más claros son: el costo por lead sigue subiendo, los reportes que recibís no tienen métricas útiles, no podés ver en detalle a qué audiencias van los anuncios, o los resultados simplemente no justifican la inversión.',
+          'Los síntomas más claros son: el costo por lead sigue subiendo, los reportes que recibes no tienen métricas útiles, no puedes ver en detalle a qué audiencias van los anuncios, o los resultados simplemente no justifican la inversión.',
       },
       {
         question: '¿La auditoría afecta las campañas activas?',
@@ -198,7 +198,7 @@ export const servicesConfig: ServiceConfig[] = [
     shortDescription:
       'Si ninguna herramienta del mercado resuelve lo que necesitas, la construimos. Soluciones a medida, en semanas.',
     fullDescription:
-      'Desarrollamos aplicaciones web y plataformas diseñadas para los procesos específicos de tu negocio. Sin funcionalidades que no usás, sin adaptaciones forzadas a herramientas genéricas. ' +
+      'Desarrollamos aplicaciones web y plataformas diseñadas para los procesos específicos de tu negocio. Sin funcionalidades que no usas, sin adaptaciones forzadas a herramientas genéricas. ' +
       'Definimos el alcance exacto antes de escribir una línea de código. Desarrollamos en ciclos cortos con entregas funcionales para que veas el progreso real. El código fuente es tuyo.',
     keywords: [
       'desarrollo de software a medida para empresas',
@@ -210,7 +210,7 @@ export const servicesConfig: ServiceConfig[] = [
       {
         question: '¿Cuándo tiene sentido desarrollar software a medida?',
         answer:
-          'Cuando las herramientas del mercado no cubren un proceso clave de tu negocio, cuando usás tres o cuatro plataformas para hacer algo que podría estar en una sola, o cuando querés convertir un proceso propio en un producto digital.',
+          'Cuando las herramientas del mercado no cubren un proceso clave de tu negocio, cuando usas tres o cuatro plataformas para hacer algo que podría estar en una sola, o cuando quieres convertir un proceso propio en un producto digital.',
       },
       {
         question: '¿Quedo atado a ustedes después de que el software está listo?',
@@ -225,7 +225,7 @@ export const servicesConfig: ServiceConfig[] = [
       {
         question: '¿Qué tipos de aplicaciones desarrollan?',
         answer:
-          'Aplicaciones web, portales internos, plataformas SaaS, herramientas de gestión, dashboards y cualquier sistema que necesite integrarse con servicios externos. Si lo podés describir, lo podemos construir.',
+          'Aplicaciones web, portales internos, plataformas SaaS, herramientas de gestión, dashboards y cualquier sistema que necesite integrarse con servicios externos. Si lo puedes describir, lo podemos construir.',
       },
     ],
   },

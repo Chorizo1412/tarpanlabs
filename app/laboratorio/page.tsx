@@ -52,7 +52,7 @@ export default function LaboratorioPage() {
       </Section>
       <CtaFinal
         title="¿Querés que apliquemos esto a tu empresa?"
-        subtitle="Lo que publicamos en el lab viene de proyectos reales. Contanos el tuyo."
+        subtitle="Lo que publicamos en el lab viene de proyectos reales. Cuéntanos el tuyo."
       />
     </>
   )

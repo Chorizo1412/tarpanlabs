@@ -55,7 +55,7 @@ export default function NosotrosPage() {
       </Section>
       <CtaFinal
         title="Hablemos de tu negocio"
-        subtitle="Cuéntanos qué proceso querés resolver. En 48 horas te respondemos."
+        subtitle="Cuéntanos qué proceso quieres resolver. En 48 horas te respondemos."
         ctaLabel="Hablar con el equipo"
       />
     </>
