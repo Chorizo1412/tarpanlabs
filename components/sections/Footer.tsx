@@ -23,7 +23,7 @@ export const Footer = () => (
           <ul className="grid grid-cols-2 gap-x-8 gap-y-2.5 text-sm text-fg-muted">
             <li><Link href="/servicios/chatbots-inteligencia-artificial/" className="transition-colors hover:text-fg">Chatbots con IA</Link></li>
             <li><Link href="/servicios/auditoria-seo/" className="transition-colors hover:text-fg">Auditoría SEO y GEO</Link></li>
-            <li><Link href="/servicios/automatizacion-de-procesos/" className="transition-colors hover:text-fg">Automatización de procesos</Link></li>
+            <li><Link href="/servicios/automatizacion-de-procesos/" className="transition-colors hover:text-fg">Automatizaciones</Link></li>
             <li><Link href="/servicios/auditoria-publicidad-digital/" className="transition-colors hover:text-fg">Auditoría de Anuncios</Link></li>
             <li><Link href="/servicios/desarrollo-web/" className="transition-colors hover:text-fg">Desarrollo Web</Link></li>
             <li><Link href="/servicios/desarrollo-saas/" className="transition-colors hover:text-fg">Software a Medida</Link></li>

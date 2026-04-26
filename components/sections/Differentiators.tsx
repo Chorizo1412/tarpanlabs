@@ -27,8 +27,8 @@ const DIFFERENTIATORS = [
 export const Differentiators = () => (
   <Section className="pt-10 pb-16 md:pt-12 md:pb-20" data-animate>
     <Container>
-      <h2 className="mb-16 font-display text-3xl font-medium leading-tight tracking-tight text-fg md:text-4xl">
-        Por qué Tarpan Labs
+      <h2 className="mb-24 font-display text-3xl font-medium leading-tight tracking-tight text-fg md:text-4xl">
+        Por qué tarpan labs
       </h2>
       <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2">
         {DIFFERENTIATORS.map((item) => (

@@ -41,7 +41,7 @@ export const servicesConfig: ServiceConfig[] = [
   },
   {
     slug: 'automatizacion-de-procesos',
-    name: 'Automatización de procesos',
+    name: 'Automatizaciones',
     icon: '◈',
     shortDescription:
       'El tiempo que tu equipo gasta en tareas repetitivas es tiempo que no están dedicando a vender. Lo identificamos y lo automatizamos.',

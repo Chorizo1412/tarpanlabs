@@ -9,7 +9,7 @@ import { siteConfig } from '@/config/site'
 
 const pageUrl = `${siteConfig.url}/laboratorio/`
 const description =
-  'Experimentos, herramientas y notas técnicas del equipo de Tarpan Labs. Benchmarks de modelos, patrones de arquitectura y aprendizajes de proyectos reales.'
+  'Experimentos, herramientas y notas técnicas del equipo de tarpan labs. Benchmarks de modelos, patrones de arquitectura y aprendizajes de proyectos reales.'
 
 export const metadata: Metadata = {
   title: `Laboratorio | ${siteConfig.name}`,

@@ -29,7 +29,7 @@ export default function NosotrosPage() {
       <Section>
         <Container className="max-w-3xl">
           <h1 className="mb-6 font-display text-4xl font-medium leading-tight tracking-tight text-fg md:text-5xl">
-            Tarpan Labs
+            tarpan labs
           </h1>
           <p className="mb-8 text-lg text-fg-muted">
             Somos dos profesionales con más de 20 años de experiencia combinada en tecnología y negocios digitales.
@@ -49,7 +49,7 @@ export default function NosotrosPage() {
           </div>
 
           <p className="text-fg-muted">
-            Tarpan Labs nació para que cualquier empresa pueda acceder a tecnología que antes era exclusiva de las grandes corporaciones. Sin proyectos eternos, sin promesas vacías.
+            tarpan labs nació para que cualquier empresa pueda acceder a tecnología que antes era exclusiva de las grandes corporaciones. Sin proyectos eternos, sin promesas vacías.
           </p>
         </Container>
       </Section>

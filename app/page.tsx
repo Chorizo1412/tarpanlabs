@@ -10,7 +10,7 @@ import { siteConfig } from '@/config/site'
 
 const HOME_FAQS = [
   {
-    question: '¿Qué tipo de empresas trabajan con Tarpan Labs?',
+    question: '¿Qué tipo de empresas trabajan con tarpan labs?',
     answer:
       'Trabajamos con PyMEs de cualquier industria en Latinoamérica que quieren automatizar procesos, mejorar la atención al cliente o aprovechar sus datos con inteligencia artificial. No se necesita un equipo técnico interno.',
   },
