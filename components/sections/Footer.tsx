@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import { Container } from '@/components/ui/Container'
+import { LogoType } from '@/components/ui/LogoType'
 import { siteConfig } from '@/config/site'
 
 export const Footer = () => (
@@ -8,13 +8,7 @@ export const Footer = () => (
     <Container className="py-16">
       <div className="grid grid-cols-1 gap-12 md:grid-cols-3">
         <div>
-          <Image
-            src="/logo-tarpan.svg"
-            alt={siteConfig.name}
-            width={120}
-            height={28}
-            className="mb-4 h-7 w-auto opacity-90"
-          />
+          <LogoType size="md" className="mb-4 block" />
           <p className="text-sm text-fg-dim">{siteConfig.tagline}</p>
         </div>
 
